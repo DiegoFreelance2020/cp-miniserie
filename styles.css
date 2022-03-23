@@ -1,5 +1,5 @@
 .cp-intro{
-    background-image: url(/img/unnamed.jpg);
+    background-image: url(/img/cp-borders-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,21 +11,56 @@
     justify-content: center;
     z-index: 2;
     position: relative;
+    padding: 2em;
+}
+.container-cont{
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#clock{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-.cp-intro .cp-intro__logo{
-    width: 40%;
-    height: auto;
+.box-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    
 }
 
-.cp-intro .cp-intro__info-down{
+.box-number .number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    font-size: 3em;
+    width: 50px;
+    height: 50px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 1.25;
 }
 
+.box-number .text{
+    color: white;
+    margin-top: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .cp-intro .cp-intro__info-card__link .cp-intro__info-card{
     width: 330px;
     background-color: rgb(32,58,87);
@@ -486,7 +521,7 @@
 @media (max-width: 992px) {
     .cp-intro{
         height: auto;
-        padding: 2em;
+        padding: 23em 2em 2em 2em;
     }
     .cp-section-2{
     margin-top: 1em !important;
@@ -527,6 +562,29 @@
 }
 
 @media (max-width: 576px){
+    .cp-intro{
+        background-image: url(/img/cp-borders-mb.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20em 2em 1em 2em;
+        height: 650px;
+    }
+    .container-cont{
+        height: 200px;
+    }
+    #clock{
+        flex-flow: row;
+    }
+    .box-number{
+        width: 15%;
+    }
+    .box-number .number{
+        font-size: 2em;
+    }
+    .box-number .text{
+        font-size: 13px;
+    }
     .cp-section-2__text{
         margin-top: -4em;
     }
