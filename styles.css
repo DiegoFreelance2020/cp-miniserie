@@ -574,10 +574,11 @@
         height: 200px;
     }
     #clock{
-        flex-flow: row;
+        box-sizing: border-box;
     }
     .box-number{
-        width: 15%;
+        width: 30%;
+        box-sizing: border-box;
     }
     .box-number .number{
         font-size: 2em;
