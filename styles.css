@@ -13,6 +13,17 @@
     position: relative;
     padding: 2em;
 }
+.cp-intro__logo{
+    width: 650px;
+    height: auto;
+    object-fit: cover;
+}
+.cp-intro__text{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
 .container-cont{
     text-align: center;
     height: 60px;
@@ -567,8 +578,26 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 20em 2em 1em 2em;
+        padding: 1em;
         height: 650px;
+    }
+    .cp-intro__logo{
+        width: 330px;
+    }
+    .cp-intro__text{
+        font-size: 18px;
+    }
+    .cp-intro__date{
+        width: 95%;
+        background-color: rgba(0, 31, 247, 0.6);
+        padding: .5em;
+    }
+    .cp-intro__date span{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
     .container-cont{
         height: 200px;
