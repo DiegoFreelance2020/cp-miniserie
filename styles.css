@@ -565,6 +565,30 @@
     grid-gap: 2rem;
 }
 
+.modal-cont-text{
+    padding: 0 3.5em;
+}
+
+.modal-cont-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.modal-cont-foto .img{
+    width: 180px;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1920px){
+    .cp-section-2 .cp-section-2__text-aux{
+        padding: 2em 1em;
+    }
+}
+
 @media (max-width: 992px) {
     .cp-intro{
         height: auto;

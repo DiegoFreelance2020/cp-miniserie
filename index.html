@@ -1,608 +1,1451 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breaking Borders</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Breaking Borders</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Modal -->
-  <div class="modal fade" id="speaker-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          ...
+  <body>
+    <!-- Modal Speaker 1-->
+    <div
+      class="modal fade"
+      id="speaker-1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div
+              class="modal-cont-foto d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="/img/pro-1.png" alt="" />
+            </div>
+            <div
+              class="modal-cont-text d-flex flex-column justify-content-center"
+            >
+              <h2 class="pt-5 heading-3 text-center">Andrés Ordóñez</h2>
+              <p>
+                Andrés Ordóñez es un líder creativo que con más de 20 años de
+                experiencia ha ayudado a las marcas exitosas a crear su
+                narrativa. En este momento, Ordóñez es el Chief Creative Officer
+                de FCB Chicago donde trabaja de cerca con Susan Credle y hace
+                parte del FCB's Global Creative Council.
+              </p>
+              <p>
+                A lo largo de su carrera ha recibido diferentes reconocimientos,
+                incluyendo 6 Andy's, 18 D&AD (1 Black), 94 Cannes Lions (2
+                Titanium, 2 GP), 48 One Show Pencils , 23 ADC, 31 Clios, 19 LIA,
+                New York Festivals, WARC y 20 Effies. Andrés subió al escenario
+                en el Festival de Creatividad Cannes Lions 2016 para hablar
+                sobre la importancia del craft y el valor del entretenimiento en
+                las narrativas de marca que rompen con el desorden. Ha sido juez
+                en diferentes festivales de premios internacionales, incluidos
+                One Show, Clio and Clio Health, New York Festival, Lisbon
+                Advertising Festival, NA Effie Awards, the Radio Mercury Awards,
+                Cíclope, Addys y El Ojo de Iberoamérica.
+              </p>
+              <p>
+                En el 2019, Ordóñez se une a FCB y es nombrado una de las Top
+                100 mentes más creativas en marketing, media, tecnología y
+                cultura.
+              </p>
+              <p>
+                Luego, en el 2020 es nombrado Campaign US´40 Over 40, que
+                reconoce al talento senior que ha mostrado innovación y
+                liderazgo en todas las áreas de marketing, publicidad y
+                comunicaciones. Además, FCB fue reconocida como la agencia #5
+                más creativa en Estados Unidos y la agencia #14 a nivel mundial,
+                de acuerdo a The Drum Report.
+              </p>
+              <p>
+                En el 2021, Andrés es nombrado el CCO #2 en Norte América y #3 a
+                nivel mundial por The One Show. Ese mismo año, FCB es nombrada
+                la agencia creativa #1 en Norte América, la #3 a nivel global y
+                Reach Track Agency en Cannes.
+              </p>
+              <p>Ordóñez vive y respira la mentalidad #NVRFNSHD.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Intro -->
-  <div class="cp-intro d-flex justify-content-end">
-    <img src="/img/cp-borders-logo.png" alt="" class="cp-intro__logo" />
-    <span class="cp-intro__text mt-3 text-center">Miniserie documental del talento publicitario latino en Estados
-      Unidos</span>
-    <div class="container-cont mt-4 mb-4">
-      <div id="clock" data-text-days="Días" data-text-hours="Horas" data-text-minutes="Minutos"
-        data-text-seconds="Segundos" data-date-day="5" data-date-month="06" data-date-year="2022" data-date-hour="24"
-        data-date-minute="00" data-date-second="00"></div>
-    </div>
-    <div class="cp-intro__date d-flex justify-content-center d-lg-none mt-4">
-      <span><b>Julio 2022</b>|USA</span>
-    </div>
-  </div>
-  <!-- Separator -->
-  <div class="cp-triangle-cont text-center d-flex justify-content-center">
-    <span class="cp-triangle"></span>
-  </div>
-
-  <div class="cp-section-2 mt-5 mb-5 p-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-6 cp-section__cont-text">
-          <p class="cp-section-2__text parrafos">
-            El objetivo del proyecto académico video documental “Breaking
-            Borders” es realizar una Miniserie Documental que dará a conocer
-            la historia del talento publicitario latino en Estados Unidos;
-            mediante un formato de varios episodios recogeremos de manera
-            documental en video, la historia de al menos 10 muy importantes
-            directivos que hoy se encuentran liderando varias de las más
-            grandes compañías de publicidad en Estados Unidos, desde New York,
-            Miami, Dallas, Chicago y Los Ángeles, a través de una serie de
-            entrevista basadas en una investigación periodística, buscamos
-            visibilizar, destacar y dar a conocer estas historias de
-            crecimiento, retos, y oportunidades que se consiguen en la meca de
-            la publicidad global, Estados Unidos.
-          </p>
-        </div>
-        <div class="col-lg-6 cp-section-2__cont-img">
-          <img src="/img/img-section1.png" alt="" class="cp-section-2__img" />
+    <!-- Modal Speaker 2-->
+    <div
+      class="modal fade"
+      id="speaker-2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div
+              class="modal-cont-foto d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="/img/pro-2.png" alt="" />
+            </div>
+            <div
+              class="modal-cont-text d-flex flex-column justify-content-center"
+            >
+              <h2 class="pt-5 heading-3 text-center">Ciro Sarmiento</h2>
+              <p>
+                Ciro Sarmiento nació en New York pero es de padres Colombianos.
+                Creció, estudió y formó su carrera publicitaria en Colombia. Con
+                más de 23 años de experiencia en Latinoamérica y Norteamérica,
+                Ciro asumió roles de liderazgo en la industria creativa de los
+                Estados Unidos para clientes como Procter & Gamble,
+                GlaxoSmithKline, PepsiCo, Anheuser-Busch, Frito-Lay, AT&T,
+                DirecTV, Burger King, Chevy, Dunkin’, Kellogg’s, Hershey’s,
+                Mars, Domino’s, MillerCoors, Unilever y Coca-Cola.
+              </p>
+              <p>
+                Después de 7 años en Ogilvy Colombia, Ciro se movió a Estados
+                Unidos a finales de 2008 para liderar esfuerzos multiculturales
+                en Latinworks, Leo Burnett Chicago y Dieste, enfocándose en
+                generar impacto cultural Latino para compañías grandes que aún
+                no entendían sobre diversidad o pensamiento global en sus
+                estrategias de marketing.
+              </p>
+              <p>
+                Ciro ha sido jurado internacional en los principales festivales
+                del mundo, cuenta con todos los reconocimientos en premios de
+                creatividad y estrategia, fue Presidente del Círculo Creativo
+                Hispano en USA, ha sido conferencista en D&AD, Cannes Lions, Ted
+                Talk y el Ojo de Iberoamérica y además es graduado del Senior
+                Management Program en Business Administration de Omnicom
+                University, en alianza con Harvard Business School (Babson
+                College). Actualmente vive en Brooklyn, NY.
+              </p>
+              <p>
+                <strong>@cirosarmiento</strong>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="cp-section-2__text-2 text-center">
-      <p class="cp-section-2__text-aux heading-3">
-        No solo en Publicidad, el talento colombiano durante las últimas dos
-        décadas se ha venido abriendo camino a nivel profesional en diferentes
-        áreas en múltiples mercados en el mundo.
-      </p>
-      <img src="/img/cp-lines.png" alt="" class="cp-section-2__lines" />
-    </div>
-    <div class="cp-section-2__gallery">
-      <div class="container">
-        <div class="row mb-5">
-          <img src="/img/img-section-2.png" alt="" />
+    <!-- Modal Speaker 3-->
+    <div
+      class="modal fade"
+      id="speaker-3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div
+              class="modal-cont-foto d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="/img/pro-3.png" alt="" />
+            </div>
+            <div
+              class="modal-cont-text d-flex flex-column justify-content-center"
+            >
+              <h2 class="pt-5 heading-3 text-center">Juan Carlos Ortiz</h2>
+              <p>
+                Juan Carlos Ortiz was the first Latin American to become
+                President of an advertising agency in the United States when he
+                led Leo Burnett USA in 2006.
+              </p>
+              <p>
+                In 2008, Ortiz was invited to join DDB Worldwide as CEO of the
+                Latin offices; where he quickly became the pioneer in uniting
+                the company's Latin markets worldwide (USA, Latin America, and
+                Spain) under a single vision of culture rather than geography.
+                This movement has inspired Latin creativity and passion to
+                become a world reference.
+              </p>
+              <p>
+                DDB Latina’s united team has won more than 200 Lions at the
+                Cannes Lions International Festival of Creativity. From a
+                regional perspective, it has been recognized as Ibero-America’s
+                Most Creative Network in 2017, 2019, 2020, and 2021 at El Ojo
+                Festival and by Adlatina’s prestigious ranking Crema. Under the
+                leadership of Juan Carlos and for the first time in its history,
+                DDB Latina represented 50% of DDB Worldwide’s creative results
+                at Cannes 2021 and was named the Most Effective Network at the
+                Effies LATAM 2021.
+              </p>
+              <p>
+                He has collected several awards worldwide and has been President
+                of Jury at Cannes, El Ojo, El Sol, and Wave Festivals. Ortiz was
+                also a member of the Global Effie Awards. Ortiz is known in his
+                natal country for winning the first gold Lion of Colombia’s
+                history with the famous anti-drug campaign film called:
+                “Dandruff.”
+              </p>
+              <p>
+                Ortiz is an inductee of the Hall of Achievement by the American
+                Advertising Federation. The World Economic Forum at Davos
+                recognized him as a Young Global Leader for his professional
+                accomplishments, commitment to society, and potential to shape
+                the world’s future.
+              </p>
+              <p>
+                He is the author of "Shorts," a trilogy written from his mobile
+                phone at 30,000 feet above the ground during his business trips
+                around the globe. Forbes magazine listed the book as the
+                postmodern book in 2011.
+              </p>
+              <p>
+                In 2014, Ortiz was invited to take upon the role of Creative
+                Chairman of DDB Americas to merge the creative teams of North
+                America, Spain, and Latin America.
+              </p>
+              <p>
+                In 2018, Juan Carlos led the strategy and creative presidential
+                campaign of the current President of Colombia, Ivan Duque.
+              </p>
+              <p>
+                In 2021, he was included for the second consecutive year in the
+                select list of the 50 Forbes Creatives, which highlights the
+                Colombian talent that makes a difference around the world.
+              </p>
+              <p>
+                Juan Carlos is also a columnist of El Espectador newspaper since
+                2008, one of the most important publications of Colombia.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="cp-triangle-cont-v2 text-center d-flex justify-content-center">
+    <!-- Modal Speaker 4-->
+    <div
+      class="modal fade"
+      id="speaker-4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div
+              class="modal-cont-foto d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="/img/pro-4.png" alt="" />
+            </div>
+            <div
+              class="modal-cont-text d-flex flex-column justify-content-center"
+            >
+              <h2 class="pt-5 heading-3 text-center">Juan Isaza</h2>
+              <p>
+                Juan Isaza es vicepresidente de estrategia e innovación de DDB
+                Latina, la división de DDB que reúne los mercados de América
+                Latina, España y el mercado hispano de Estados Unidos.
+                Actualmente, lidera la operación de DDB México. Ha trabajado
+                para proyectos globales y regionales de clientes como
+                Volkswagen, McDonald’s, Telefónica, BBVA, Bridgestone, Mars y
+                Clorox.
+              </p>
+              <p>
+                Es un apasionado del marketing político, Fue consultor de
+                comunicaciones y redes sociales de Iván Duque, elegido como
+                presidente de Colombia en 2018.
+              </p>
+              <p>
+                Tiene una maestría en Marketing del RMIT University (Australia).
+                Desde 2009 hace parte del Consejo Global de Estrategia de DDB.
+              </p>
+              <p>
+                Tiene una columna en el diario económico La República
+                (Colombia). Ha sido conferencista en eventos académicos y
+                empresariales en Estados Unidos, Europa y América Latina. Fue
+                elegido como uno de los 50 profesionales del año en 2021 por la
+                revista AdWeek en Estados Unidos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Speaker 5-->
+    <div
+      class="modal fade"
+      id="speaker-5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div
+              class="modal-cont-foto d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="/img/pro-5.png" alt="" />
+            </div>
+            <div
+              class="modal-cont-text d-flex flex-column justify-content-center"
+            >
+              <h2 class="pt-5 heading-3 text-center">Manuel Bordé</h2>
+              <p>
+                Manuel Bordé lidera la estrategia creativa global para acelerar
+                el Creative Commerce en la intersección de lo físico, digital y
+                social. Asumiendo el mando de Geometry en 2019, ha jugado un rol
+                fundamental para elevar la creatividad en Norte América y ha
+                estado trabajando junto a Beth-Ann Kaminkow para lanzar la nueva
+                VMLY&R Commerce de WPP, ayudando a sus clientes a navegar la
+                rápida transformación digital en retail y en los diferentes
+                touchpoints de commerce.
+              </p>
+              <p>
+                Manuel cuenta con una experiencia de agencia y de clientes que
+                abarcan múltiples categorías y mercados, habiendo pasado parte
+                de su carrera en networks como TBWA, DDB y Ogilvy en mercados
+                como MENA (Medio Oriente y Norte de África), Puerto Rico, Panamá
+                y Colombia.
+              </p>
+              <p>
+                Ha creado y liderado campañas que han sido reconocidas en
+                festivales importantes como Cannes Lions, D&AD, One Show, Clio
+                Awards, Effie, Dubai Lynx (incluyendo 10 GPs), WARC, London
+                International Awards, New York Festivals, Ojo de Iberoamérica y
+                Loeries, entre otros Manuel fue nombrado “#1 Creative Director
+                in the MENA Region” por el B&W Report tres años seguidos
+                (2017-2019) y fue incluido en “Communicate’s 40 under 40 Class
+                of 2019”.
+              </p>
+              <p>
+                Su visión para elevar el potencial creativo de los canales de
+                commerce ha ayudado a VMLY&R COMMERCE liderar esta nueva y
+                emergente área de crecimiento para los clientes de marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Speaker 6-->
+    <div
+      class="modal fade"
+      id="speaker-6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div
+              class="modal-cont-foto d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="/img/pro-6.png" alt="" />
+            </div>
+            <div
+              class="modal-cont-text d-flex flex-column justify-content-center"
+            >
+              <h2 class="pt-5 heading-3 text-center">Mauricio Sabogal</h2>
+              <p>
+                Con más de veinticinco años en el negocio de Datos, Tecnología,
+                Medios y Publicidad, trabajando para WPP, IPG, OMNICOM y
+                NIELSEN.
+              </p>
+              <p>
+                La mayor parte de su experiencia proviene de la creación y
+                desarrollo de redes regionales y globales para grupos
+                multinacionales, posicionándolos como líderes de la industria
+                publicitaria global. Trabajó durante más de 15 años,
+                desarrollando agencias de medios globales en los EE. UU.,
+                Europa, América Latina y Asia, siendo el primer latinoamericano
+                designado como CEO global de una agencia de publicidad y el
+                latino más influyente en el negocio de las agencias de medios.
+                (Ad Age).
+              </p>
+              <p>
+                Reconocido como uno de los 100 colombianos más importantes fuera
+                del país por el presidente Juan Manuel Santos., publicista de la
+                década por Ad Latina y Leyenda de la Publicidad por AdColor, en
+                2021 Fue escogido por la revista Campaign como uno de los 40
+                sobre 40, debido a su exitosa carrera global en publicidad.
+              </p>
+              <p>
+                Actualmente trabaja en su propia empresa, SAB Media Group LLC,
+                fundada en 2014, ofreciendo servicios de marketing y publicidad
+                digital; utilizando sus relaciones en todo el mundo, creadas
+                durante más de 25 años de carrera, para conectar empresas con
+                personas que brindan excelencia en los campos de la gestión de
+                datos, la evolución digital en marketing, el comercio
+                electrónico y el marketing responsable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="cp-intro d-flex justify-content-end">
+      <img src="/img/cp-borders-logo.png" alt="" class="cp-intro__logo" />
+      <span class="cp-intro__text mt-3 text-center"
+        >Miniserie documental del talento publicitario latino en Estados
+        Unidos</span
+      >
+      <div class="container-cont mt-4 mb-4">
+        <div
+          id="clock"
+          data-text-days="Días"
+          data-text-hours="Horas"
+          data-text-minutes="Minutos"
+          data-text-seconds="Segundos"
+          data-date-day="5"
+          data-date-month="06"
+          data-date-year="2022"
+          data-date-hour="24"
+          data-date-minute="00"
+          data-date-second="00"
+        ></div>
+      </div>
+      <div class="cp-intro__date d-flex justify-content-center d-lg-none mt-4">
+        <span><b>Julio 2022</b>|USA</span>
+      </div>
+    </div>
+    <!-- Separator -->
+    <div class="cp-triangle-cont text-center d-flex justify-content-center">
       <span class="cp-triangle"></span>
     </div>
-  </div>
-  <div class="cp-section-3 m-0">
-    <div class="container text-center">
-      <h2 class="cp-section-3__title heading-1">entrevistados</h2>
-      <p class="cp-section-3__desc">
-        Estados Unidos es la meca de la Publicidad, las grandes Agencias de
-        Publicidad y las grandes campañas para las más importantes marcas
-        surgen de la creatividad desarrollada en Estados Unidos, pasando por
-        Madison Avenue en New York, Leo Burnett, Ogily y la mítica agencia de
-        Bill Bernbach, DDB; son referentes contemporáneos del trabajo
-        profesional de entre otros, colombianos que se destacan por llevar el
-        trabajo de estas marcas a otro nivel.
-      </p>
-    </div>
-  </div>
-  <div class="cp-triangle-cont-v3 text-center d-flex justify-content-center">
-    <span class="cp-triangle"></span>
-  </div>
-  <div class="cp-section-4 p-5">
-    <div class="cp-speakers-grid p-5" id="cp-speakers-grid">
-      <!-- Información desde javascript -->
-    </div>
-  </div>
-  <div class="cp-section-5 m-0">
-    <div class="container d-flex flex-column align-items-center">
-      <span class="cp-section-5__text parrafos">
-        La primera temporada del minidocumental talento latino en Estados
-        Unidos es una propuesta del medio de comunicación
-        <a href="#" class="link-page">Copublicitarias</a> con el apoyo de
-        <a href="#" class="link-page">Amaze Inc Studio</a>, donde a través de
-        una serie de capítulos en formato miniserie en video entrevistas,
-        presentaremos el talento en principio, colombiano, en Estados Unidos;
-        en este momento hay decenas de hispanos/americanos dirigiendo
-        compañías multinacionales de Publicidad en diferentes ciudades del
-        territorio norteamericano, entre ellas New York, Miami, Los Ángeles,
-        Dallas y Chicago, de allí que este momento en la historia es oportuno
-        para destacar el buen trabajo y buen nombre de colombianos, entre
-        ellos:
-      </span>
-      <a href="#" class="cp-section-5__link">Regístrate para ver en exclusiva la primera temporada</a>
-    </div>
-  </div>
-  <div class="cp-section-6 p-5">
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
+
+    <div class="cp-section-2 mt-5 mb-5 p-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 cp-section__cont-text">
+            <p class="cp-section-2__text parrafos">
+              El objetivo del proyecto académico video documental “Breaking
+              Borders” es realizar una Miniserie Documental que dará a conocer
+              la historia del talento publicitario latino en Estados Unidos;
+              mediante un formato de varios episodios recogeremos de manera
+              documental en video, la historia de al menos 10 muy importantes
+              directivos que hoy se encuentran liderando varias de las más
+              grandes compañías de publicidad en Estados Unidos, desde New York,
+              Miami, Dallas, Chicago y Los Ángeles, a través de una serie de
+              entrevista basadas en una investigación periodística, buscamos
+              visibilizar, destacar y dar a conocer estas historias de
+              crecimiento, retos, y oportunidades que se consiguen en la meca de
+              la publicidad global, Estados Unidos.
+            </p>
+          </div>
+          <div class="col-lg-6 cp-section-2__cont-img">
+            <img src="/img/img-section1.png" alt="" class="cp-section-2__img" />
+          </div>
         </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
       </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-    <div class="row p-5">
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-      <div class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-6__cont-img">
-          <img src="/img/pro-1.png" alt="" class="cp-section-6__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-6__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-6__country parrafos">FCB Chicago</span>
-      </div>
-    </div>
-  </div>
-  <div class="cp-section-7 d-flex flex-column align-items-center justify-content-center">
-    <img src="/img/lineas-2.png" alt="" class="cp-section-7__lines" />
-    <h2 class="cp-section-7__title pt-5 heading-1">cronograma</h2>
-    <span class="cp-section-7__subtitle heading-3 mb-4">PRIMERA TEMPORADA</span>
-    <div class="row w-100 px-5">
-      <div class="col cp-section-7__cards d-flex flex-column align-items-center justify-content-center">
-        <span class="cp-section-7__cards__title heading-3">PREPRODUCCIÓN</span>
-        <span class="cp-section-7__cards__date heading-3">marzo a junio</span>
-        <span class="cp-section-7__cards__year heading-2">2022</span>
-        <span class="cp-section-7__cards__down heading-3">Investigación y guión</span>
-      </div>
-      <div class="col cp-section-7__cards d-flex flex-column align-items-center justify-content-center">
-        <span class="cp-section-7__cards__title heading-3">PRODUCCIÓN</span>
-        <span class="cp-section-7__cards__date heading-3">julio a septiembre</span>
-        <span class="cp-section-7__cards__year heading-2">2022</span>
-        <span class="cp-section-7__cards__down heading-3">Entrevistas y rodaje</span>
-      </div>
-      <div class="col cp-section-7__cards d-flex flex-column align-items-center justify-content-center">
-        <span class="cp-section-7__cards__title heading-3">POSTPRODUCCIÓN</span>
-        <span class="cp-section-7__cards__date heading-3">octubre y noviembre</span>
-        <span class="cp-section-7__cards__year heading-2">2022</span>
-        <span class="cp-section-7__cards__down heading-3">Edición y animación</span>
-      </div>
-    </div>
-    <img src="/img/lineas-1.png" alt="" class="cp-section-7__lines-down" />
-  </div>
-  <div class="cp-section-8 d-flex flex-column align-items-center justify-content-center">
-    <div class="row">
-      <div class="col-12 col-lg-8 cp-section-8__cont-text text-center">
-        <p class="cp-section-8__text text-center parrafos">
-          En la segunda temporada abordaremos diferentes directivos mexicanos
-          en Estados Unidos, consiguiendo que cada temporada reconozca el
-          talento latino, desde argentinos, pasando por brasileños, peruanos,
-          y todos los latinos y centroamericanos; un proyecto académico
-          multicultural.
+      <div class="cp-section-2__text-2 text-center">
+        <p class="cp-section-2__text-aux heading-3">
+          No solo en Publicidad, el talento colombiano durante las últimas dos
+          décadas se ha venido abriendo camino a nivel profesional en diferentes
+          áreas en múltiples mercados en el mundo.
         </p>
-        <a href="#" class="cp-section-8__link">Regístrate para ver en exclusiva la primera temporada</a>
+        <img src="/img/cp-lines.png" alt="" class="cp-section-2__lines" />
       </div>
-      <div class="col-12 col-lg-4 p-0">
-        <img src="/img/img-right.png" alt="" class="cp-section-8__img-right">
+      <div class="cp-section-2__gallery">
+        <div class="container">
+          <div class="row mb-5">
+            <img src="/img/img-section-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="cp-triangle-cont-v2 text-center d-flex justify-content-center"
+      >
+        <span class="cp-triangle"></span>
       </div>
     </div>
-  </div>
-  <div class="cp-section-9 mt-5 p-5">
-    <div class="container">
+    <div class="cp-section-3 m-0">
+      <div class="container text-center">
+        <h2 class="cp-section-3__title heading-1">entrevistados</h2>
+        <p class="cp-section-3__desc">
+          Estados Unidos es la meca de la Publicidad, las grandes Agencias de
+          Publicidad y las grandes campañas para las más importantes marcas
+          surgen de la creatividad desarrollada en Estados Unidos, pasando por
+          Madison Avenue en New York, Leo Burnett, Ogily y la mítica agencia de
+          Bill Bernbach, DDB; son referentes contemporáneos del trabajo
+          profesional de entre otros, colombianos que se destacan por llevar el
+          trabajo de estas marcas a otro nivel.
+        </p>
+      </div>
+    </div>
+    <div class="cp-triangle-cont-v3 text-center d-flex justify-content-center">
+      <span class="cp-triangle"></span>
+    </div>
+    <div class="cp-section-4 p-5">
+      <div class="cp-speakers-grid p-5" id="cp-speakers-grid">
+        <!-- Información desde javascript -->
+      </div>
+    </div>
+    <div class="cp-section-5 m-0">
+      <div class="container d-flex flex-column align-items-center">
+        <span class="cp-section-5__text parrafos">
+          La primera temporada del minidocumental talento latino en Estados
+          Unidos es una propuesta del medio de comunicación
+          <a href="#" class="link-page">Copublicitarias</a> con el apoyo de
+          <a href="#" class="link-page">Amaze Inc Studio</a>, donde a través de
+          una serie de capítulos en formato miniserie en video entrevistas,
+          presentaremos el talento en principio, colombiano, en Estados Unidos;
+          en este momento hay decenas de hispanos/americanos dirigiendo
+          compañías multinacionales de Publicidad en diferentes ciudades del
+          territorio norteamericano, entre ellas New York, Miami, Los Ángeles,
+          Dallas y Chicago, de allí que este momento en la historia es oportuno
+          para destacar el buen trabajo y buen nombre de colombianos, entre
+          ellos:
+        </span>
+        <a href="#" class="cp-section-5__link"
+          >Regístrate para ver en exclusiva la primera temporada</a
+        >
+      </div>
+    </div>
+    <div class="cp-section-6 p-5">
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+        <div
+          class="cp-card-2 col-lg-3 px-4 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="cp-section-6__cont-img">
+            <img
+              src="/img/pro-1.png"
+              alt=""
+              class="cp-section-6__cont-img__img-pro"
+            />
+          </div>
+          <span class="cp-section-6__name heading-3">Andrés Ordóñez</span>
+          <span class="cp-section-6__carrer parrafos"
+            >Chief Creative Officer</span
+          >
+          <span class="cp-section-6__country parrafos">FCB Chicago</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cp-section-7 d-flex flex-column align-items-center justify-content-center"
+    >
+      <img src="/img/lineas-2.png" alt="" class="cp-section-7__lines" />
+      <h2 class="cp-section-7__title pt-5 heading-1">cronograma</h2>
+      <span class="cp-section-7__subtitle heading-3 mb-4"
+        >PRIMERA TEMPORADA</span
+      >
+      <div class="row w-100 px-5">
+        <div
+          class="col cp-section-7__cards d-flex flex-column align-items-center justify-content-center"
+        >
+          <span class="cp-section-7__cards__title heading-3"
+            >PREPRODUCCIÓN</span
+          >
+          <span class="cp-section-7__cards__date heading-3">marzo a junio</span>
+          <span class="cp-section-7__cards__year heading-2">2022</span>
+          <span class="cp-section-7__cards__down heading-3"
+            >Investigación y guión</span
+          >
+        </div>
+        <div
+          class="col cp-section-7__cards d-flex flex-column align-items-center justify-content-center"
+        >
+          <span class="cp-section-7__cards__title heading-3">PRODUCCIÓN</span>
+          <span class="cp-section-7__cards__date heading-3"
+            >julio a septiembre</span
+          >
+          <span class="cp-section-7__cards__year heading-2">2022</span>
+          <span class="cp-section-7__cards__down heading-3"
+            >Entrevistas y rodaje</span
+          >
+        </div>
+        <div
+          class="col cp-section-7__cards d-flex flex-column align-items-center justify-content-center"
+        >
+          <span class="cp-section-7__cards__title heading-3"
+            >POSTPRODUCCIÓN</span
+          >
+          <span class="cp-section-7__cards__date heading-3"
+            >octubre y noviembre</span
+          >
+          <span class="cp-section-7__cards__year heading-2">2022</span>
+          <span class="cp-section-7__cards__down heading-3"
+            >Edición y animación</span
+          >
+        </div>
+      </div>
+      <img src="/img/lineas-1.png" alt="" class="cp-section-7__lines-down" />
+    </div>
+    <div
+      class="cp-section-8 d-flex flex-column align-items-center justify-content-center"
+    >
       <div class="row">
-        <div class="col-lg-5 cp-cont-text-9">
-          <p class="cp-section-9__text-left parrafos">
-            Solo en Agencias de Publicidad en Estados Unidos a nivel directivo
-            hay más de 20 colombianos, con un trabajo destacado a puro pulso que
-            apenas ha sido cubierto de manera mediática, este proyecto
-            audiovisual reconocerá el talento latino en Estados Unidos contando
-            la historia a fondo, de varios líderes en Publicidad que hoy son
-            referentes para los colombianos y latinos, presentando desde su
-            llegada, crecimiento, retos y oportunidades ¡Un documento fílmico
-            inspiracional para destacar el trabajo latino en Estados Unidos!
+        <div class="col-12 col-lg-8 cp-section-8__cont-text text-center">
+          <p class="cp-section-8__text text-center parrafos">
+            En la segunda temporada abordaremos diferentes directivos mexicanos
+            en Estados Unidos, consiguiendo que cada temporada reconozca el
+            talento latino, desde argentinos, pasando por brasileños, peruanos,
+            y todos los latinos y centroamericanos; un proyecto académico
+            multicultural.
           </p>
+          <a href="#" class="cp-section-8__link"
+            >Regístrate para ver en exclusiva la primera temporada</a
+          >
         </div>
-        <div class="col-lg-3 d-flex align-items-center">
-          <img src="/img/copu-logo-black.png" alt="" class="cp-section-9__logo-copu">
-        </div>
-        <div class="col-lg-4 d-flex flex-column justify-content-center cp-section-9__info-right">
-          <span class="cp-section-9__info-right__company heading-2">COPUBLICITARIAS</span>
-          <span class="cp-section-9__info-right__mail">info@copublicitarias.com</span>
-          <a href="" class="cp-section-9__info-right__cta">CONTÁCTANOS EN WHATSAPP</a>
+        <div class="col-12 col-lg-4 p-0">
+          <img
+            src="/img/img-right.png"
+            alt=""
+            class="cp-section-8__img-right"
+          />
         </div>
       </div>
     </div>
-  </div>
-  <div class="cp-section-10 p-5 d-flex flex-column align-items-center justify-content-center">
-    <h2 class="cp-section-10__title heading-2">Con el respaldo de:</h2>
-    <div class="row d-flex align-items-center text-center">
-      <div class="col cp-section-10__cont-logo">
-        <img src="/img/cop-logo.png" alt="" class="cp-section-10__cont-logo__logo" />
-      </div>
-      <div class="col cp-section-10__cont-logo">
-        <img src="/img/co-logo.png" alt="" class="cp-section-10__cont-logo__logo" />
-      </div>
-      <div class="col cp-section-10__cont-logo">
-        <img src="/img/autom-logo.png" alt="" class="cp-section-10__cont-logo__logo" />
-      </div>
-      <div class="col cp-section-10__cont-logo">
-        <img src="/img/amaze-logo.png" alt="" class="cp-section-10__cont-logo__logo" />
+    <div class="cp-section-9 mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 cp-cont-text-9">
+            <p class="cp-section-9__text-left parrafos">
+              Solo en Agencias de Publicidad en Estados Unidos a nivel directivo
+              hay más de 20 colombianos, con un trabajo destacado a puro pulso
+              que apenas ha sido cubierto de manera mediática, este proyecto
+              audiovisual reconocerá el talento latino en Estados Unidos
+              contando la historia a fondo, de varios líderes en Publicidad que
+              hoy son referentes para los colombianos y latinos, presentando
+              desde su llegada, crecimiento, retos y oportunidades ¡Un documento
+              fílmico inspiracional para destacar el trabajo latino en Estados
+              Unidos!
+            </p>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center">
+            <img
+              src="/img/copu-logo-black.png"
+              alt=""
+              class="cp-section-9__logo-copu"
+            />
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center cp-section-9__info-right"
+          >
+            <span class="cp-section-9__info-right__company heading-2"
+              >COPUBLICITARIAS</span
+            >
+            <span class="cp-section-9__info-right__mail"
+              >info@copublicitarias.com</span
+            >
+            <a href="" class="cp-section-9__info-right__cta"
+              >CONTÁCTANOS EN WHATSAPP</a
+            >
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="cp-section-footer p-4 d-flex flex-column align-items-center justify-content-center">
-    <span class="cp-section-footer__text parrafos">©2022 Copublicitarias International. All rights reserved.
-      <a href="#">Privacy Policy</a></span>
-  </div>
+    <div
+      class="cp-section-10 p-5 d-flex flex-column align-items-center justify-content-center"
+    >
+      <h2 class="cp-section-10__title heading-2">Con el respaldo de:</h2>
+      <div class="row d-flex align-items-center text-center">
+        <div class="col cp-section-10__cont-logo">
+          <img
+            src="/img/cop-logo.png"
+            alt=""
+            class="cp-section-10__cont-logo__logo"
+          />
+        </div>
+        <div class="col cp-section-10__cont-logo">
+          <img
+            src="/img/co-logo.png"
+            alt=""
+            class="cp-section-10__cont-logo__logo"
+          />
+        </div>
+        <div class="col cp-section-10__cont-logo">
+          <img
+            src="/img/autom-logo.png"
+            alt=""
+            class="cp-section-10__cont-logo__logo"
+          />
+        </div>
+        <div class="col cp-section-10__cont-logo">
+          <img
+            src="/img/amaze-logo.png"
+            alt=""
+            class="cp-section-10__cont-logo__logo"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="cp-section-footer p-4 d-flex flex-column align-items-center justify-content-center"
+    >
+      <span class="cp-section-footer__text parrafos"
+        >©2022 Copublicitarias International. All rights reserved.
+        <a href="#">Privacy Policy</a></span
+      >
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="effects.js"></script>
-  <script src="gridSpeakers.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="effects.js"></script>
+    <script src="gridSpeakers.js"></script>
+  </body>
 </html>

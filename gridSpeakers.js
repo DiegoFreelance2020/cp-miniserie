@@ -27,9 +27,41 @@ const info_speakers = [
     {
         'id': 2,
         'nombre': 'Ciro Sarmiento',
-        'foto': 'img/pro-1.png',
+        'foto': 'img/pro-2.png',
         'cargo': 'Chief Creative Officer',
         'empresa': 'Weber Shandwick'
+    },
+
+    {
+        'id': 3,
+        'nombre': 'Juan Carlos Ortiz',
+        'foto': 'img/pro-3.png',
+        'cargo': 'Presidente y Director Creativo',
+        'empresa': 'DDB Américas'
+    },
+
+    {
+        'id': 4,
+        'nombre': 'Juan Isaza',
+        'foto': 'img/pro-4.png',
+        'cargo': 'Vicepresidente de estrategia e innovación',
+        'empresa': 'DDB'
+    },
+
+    {
+        'id': 5,
+        'nombre': 'Manuel Bordé',
+        'foto': 'img/pro-5.png',
+        'cargo': 'Chief Creative Officer Global',
+        'empresa': 'VMLY&R COMMERCE'
+    },
+
+    {
+        'id': 6,
+        'nombre': 'Mauricio Sabogal',
+        'foto': 'img/pro-6.png',
+        'cargo': 'Presidente',
+        'empresa': 'SAB Media Group LLC'
     }
 ]
 
