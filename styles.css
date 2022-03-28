@@ -574,6 +574,7 @@
     }
     .cp-section-2 .cp-section-2__text-aux{
         padding-top: 2em;
+        padding-bottom: 2em;
     }
     .cp-section-3{
         padding: 3rem 0;
@@ -595,6 +596,9 @@
     }
     .cp-section-8{
         padding: 0;
+    }
+    .cp-section-8 .row{
+        margin: 0;
     }
     .cp-section-9 .cp-cont-text-9{
         padding: 1em;
@@ -654,12 +658,22 @@
     }
     .cp-section-2 .cp-section-2__text-2{
         padding: 0;
+        height: 510px;
+    }
+    .cp-section-2__text-aux{
+        font-size: 17px;
+    }
+    .cp-section-2__cont-img{
+        padding: 0;
     }
     .cp-section-2 .cp-section-2__gallery{
-        padding: 0;
+        padding: 0 !important;
     }
     .cp-section-3{
         padding: 3rem 1em;
+    }
+    .cp-section-3 .cp-section-3__title{
+        font-size: 30px;
     }
     .cp-section-3 .cp-section-3__desc{
         font-size: 17px;
@@ -673,6 +687,9 @@
     .cp-section-5 .cp-section-5__text{
         font-size: 17px;
     }
+    .cp-section-6 .cp-card-2{
+        text-align: center;
+    }
     .cp-section-7 .cp-section-7__title{
         font-size: 30px;
         text-align: center;
@@ -684,14 +701,16 @@
     .cp-section-8 .cp-section-8__text{
         font-size: 17px;
     }
-    .cp-section-8{
-        padding: 3rem 1em;
-    }
     .cp-section-9 .cp-cont-text-9 .cp-section-9__text-left{
         font-size: 17px;
         margin-top: -4em;
+        padding-right: 0;
     }
+    
     .cp-section-9 .cp-section-9__info-right .cp-section-9__info-right__company{
         font-size: 30px;
+    }
+    .cp-section-10 .cp-section-10__title{
+        font-size: 23px;
     }
 }
