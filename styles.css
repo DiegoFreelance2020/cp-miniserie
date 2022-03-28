@@ -96,14 +96,14 @@
     width: 50px;
     height: 50px;
     color: white;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
 }
 
 .box-number .text{
     color: white;
     margin-top: 1em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -182,7 +182,7 @@
 .cp-section-3{
     width: 100%;
     height: auto;
-    background-color: rgb(45,45,44);
+    background-color: var(--tertiary-color);
     position: relative;
     z-index: 1;
     padding: 4rem 0;
@@ -207,6 +207,7 @@
     color: white;
     font-size: 45px;
     margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .cp-section-3 .cp-section-3__desc{
@@ -226,7 +227,7 @@
     height: 40px;
     z-index: 2;
     transform: rotate(45deg);
-    background-color: rgb(45,45,44);
+    background-color: var(--tertiary-color);
 }
 
 .cp-section-4{
@@ -235,11 +236,21 @@
     background-color: white;
 }
 
+.cp-section-4__global-link{
+    text-decoration: none;
+}
+
+.cp-section-4__global-link:hover .cp-section-4__cont-img{
+    border: 5px solid var(--primary-color);
+}
+
 .cp-section-4 .cp-section-4__cont-img{
     width: 180px;
     height: auto;
     border-radius: 50%;
     overflow: hidden;
+    border: 5px solid var(--secondary-color);
+    transition: .4s;
 }
 
 .cp-section-4 .cp-section-4__cont-img .cp-section-4__cont-img__img-pro{
@@ -249,81 +260,73 @@
 }
 
 .cp-section-4 .cp-section-4__name{
-    font-weight: bold;
-    color: rgba(32, 58, 87, 1);
-    font-size: 22px;
+    color: var(--tertiary-color);
+    font-size: 20px;
     margin-top: 15px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .cp-section-4 .cp-section-4__carrer{
     margin-top: 25px;
     font-size: 14px;
-    color: rgba(45, 45, 44, 0.8);
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--tertiary-color);
 }
 
 .cp-section-4 .cp-section-4__company{
-    color: rgba(45, 45, 44, 0.8);
+    color: var(--tertiary-color);
     font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .cp-section-4 .cp-section-4__link-bio{
-    border-color: rgb(52,251,136);
-    background: rgb(52,251,136);
-    color: rgb(32,58,87);
-    text-decoration: none;
+    color: var(--secondary-color);
     width: 100%;
     text-align: center;
-    border-radius: 30px;
-    padding: 5px 0;
     margin-top: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
     transition: .4s;
 }
 
 .cp-section-4 .cp-section-4__link-bio:hover{
-    background: rgb(31, 179, 93);
+    color: var(--primary-color);
+    text-decoration: line-through;
 }
 
 .cp-section-5{
     width: 100%;
     height: auto;
-    background-color: rgb(45,45,44);
+    background-color: var(--tertiary-color);
     padding: 5rem 10rem;
     text-align: center;
 }
 
 .cp-section-5 .cp-section-5__text{
     color: white;
-    font-size: 20px;
-    font-family: 'Arial', sans-serif;
 }
 
 .cp-section-5 .link-page{
-    color:rgba(52, 251, 136, 1);
+    color: white;
+    text-decoration: none;
 }
 
 .cp-section-5 .cp-section-5__link{
     width: 100%;
-    background-color: rgb(32,58,87);
-    color: rgb(235,235,235);
-    padding: .6em;
-    border-radius: 24px;
+    color: var(--secondary-color);
     text-align: center;
     transition: .2s;
-    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
     margin-top: 30px;
+    letter-spacing: 0.1em;
 }
 
 .cp-section-5 .cp-section-5__link:hover{
-    background-color: rgb(16, 31, 48);
+    color: var(--primary-color);
+    text-decoration: line-through;
 }
 
 .cp-section-6{
@@ -346,35 +349,34 @@
 }
 
 .cp-section-6 .cp-section-6__name{
-    font-weight: bold;
-    color: rgba(45, 45, 44, 0.8);
-    font-size: 15px;
+    color: var(--tertiary-color);
+    font-size: 20px;
     margin-top: 15px;
-    font-family: 'Arial', sans-serif;
 }
 
 .cp-section-6 .cp-section-6__carrer{
-    font-size: 13px;
-    color: rgba(45, 45, 44, 0.8);
-    font-family: 'Arial', sans-serif;
+    color: var(--tertiary-color);
 }
 
-.cp-section-6 .cp-section-6__company{
-    color: rgba(45, 45, 44, 0.8);
-    font-size: 13px;
-    font-family: 'Arial', sans-serif;
-}
 
 .cp-section-6 .cp-section-6__country{
-    color: rgba(45, 45, 44, 0.8);
-    font-size: 13px;
-    font-family: 'Arial', sans-serif;
+    color: var(--tertiary-color);
 }
 
 .cp-section-7{
     width: 100%;
     height: auto;
-    background-color: #EEEFEF;
+    background-color: var(--primary-color);
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+.cp-section-7__lines{
+    position: absolute;
+    top: -85px;
+    left: 50px;
+    width: 70px;
+    height: auto;
 }
 
 
@@ -382,142 +384,142 @@
     width: 100%;
     height: auto;
     background-color: white;
-    padding: 2em 2em 5em 2em;
+    padding: 2em;
     margin: 1em;
 }
 
 .cp-section-7 .cp-section-7__title{
-    color: rgba(32, 58, 87, 1);
-    font-size: 40px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 
+.cp-section-7 .cp-section-7__subtitle{
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
 .cp-section-7 .cp-section-7__cards .cp-section-7__cards__title{
-    color: rgba(52, 251, 136, 1);
+    color: var(--secondary-color);
     text-transform: uppercase;
-    font-weight: 900;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .cp-section-7 .cp-section-7__cards .cp-section-7__cards__date{
-    color: rgb(32, 58, 87);
-    font-weight: 900;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    color: var(--tertiary-color);
+    font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .cp-section-7 .cp-section-7__cards .cp-section-7__cards__year{
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(70,69,74);
+    color: var(--tertiary-color);
     margin-bottom: 10px;
 }
 
 .cp-section-7 .cp-section-7__cards .cp-section-7__cards__down{
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(70,69,74);
-    font-weight: 900;
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+.cp-section-7__lines-down{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 350px;
+
 }
 
 .cp-section-8{
-    background-image: url("/img/bg-sec-8.jpg");
     width: 100%;
     height: auto;
-    padding: 4rem 8rem;
+}
+
+.cp-section-8__cont-text{
+    background-color: var(--tertiary-color);
+    padding-bottom: 3rem;
 }
 
 .cp-section-8 .cp-section-8__text{
     color: white;
-    font-size: 24px;
-    font-family: 'Arial', sans-serif;
+    padding: 4rem 4rem;
+}
+
+.cp-section-8__img-right{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cp-section-8 .cp-section-8__link{
     width: 100%;
-    background: rgb(52,251,136);
-    color: rgb(32, 58, 87);
-    padding: .6em;
-    border-radius: 24px;
+    color: var(--secondary-color);
     text-align: center;
     transition: .2s;
-    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
     margin-top: 30px;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
 }
 
 .cp-section-8 .cp-section-8__link:hover{
-    background: rgb(31, 179, 93);
-}
-
-.cp-section-9 .cp-cont-text-9{
-    padding: 3rem 1rem 3rem 6rem;
+    color: var(--primary-color);
+    text-decoration: line-through;
 }
 
 .cp-section-9 .cp-cont-text-9 .cp-section-9__text-left{
-    font-family: 'Arial', sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 20px;
+    color: var(--tertiary-color);
+    padding-right: 2em;
 }
 
-.cp-section-9 .cp-section-9__info-right .cp-section-9__info-right__contact{
-    color: rgba(102, 102, 102, 1);
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.cp-section-9__logo-copu{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .cp-section-9 .cp-section-9__info-right .cp-section-9__info-right__company{
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(32,58,87);
-    font-size: 40px;
-    font-weight: 900;
+    color: var(--tertiary-color);
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .cp-section-9 .cp-section-9__info-right .cp-section-9__info-right__mail{
-    color: rgb(70,69,74);
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--tertiary-color);
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
 .cp-section-9 .cp-section-9__info-right .cp-section-9__info-right__cta{
-    width: 90%;
-    background: rgb(52,251,136);
-    color: rgb(32, 58, 87);
-    padding: .6em;
-    border-radius: 24px;
-    text-align: center;
+    width: 100%;
+    color: var(--secondary-color);
     transition: .2s;
-    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
     margin-top: 30px;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
 }
 
 .cp-section-9 .cp-section-9__info-right .cp-section-9__info-right__cta:hover{
-    background: rgb(31, 179, 93);
+    color: var(--primary-color);
+    text-decoration: line-through;
 }
 
 .cp-section-10{
     width: 100%;
     height: auto;
-    background-color: rgba(45,45,44,1);
+    background-color: var(--tertiary-color);
 }
 
 .cp-section-10 .cp-section-10__title{
     color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
     font-size: 30px;
 }
 
@@ -539,18 +541,18 @@
 }
 
 .cp-section-footer .cp-section-footer__text{
-    color: rgb(70,69,74);
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
+    color: var(--tertiary-color);
     text-align: center;
 }
 
 .cp-section-footer .cp-section-footer__text a{
-    color: rgb(70,69,74);
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: .4s;
 }
 
 .cp-section-footer .cp-section-footer__text a:hover{
-    text-decoration: none;
+    opacity: .7;
 }
 
 @media (max-width: 992px) {
@@ -588,11 +590,19 @@
     .cp-section-7 .cp-section-7__cards{
         padding: 2em 2em 3em 2em;
     }
+    .cp-section-7__lines{
+        top: -215px;
+    }
     .cp-section-8{
-        padding: 3rem;
+        padding: 0;
     }
     .cp-section-9 .cp-cont-text-9{
         padding: 1em;
+    }
+    .cp-section-9__info-right{
+        padding-top: 3rem;
+        align-items: center;
+        text-align: center;
     }
 }
 
