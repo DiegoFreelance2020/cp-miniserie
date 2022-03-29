@@ -4,6 +4,10 @@
     --tertiary-color: #000000;
   }
 
+body, html{
+    overflow-x: hidden;
+}
+
 .heading-1{
     font-family: 'Inter', sans-serif;
     font-size: 70px;
