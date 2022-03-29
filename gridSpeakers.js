@@ -1,19 +1,4 @@
 const grid_speakers = document.getElementById('cp-speakers-grid')
-/*
-<div class="cp-speakers-grid__item">
-    <a href="#" class="cp-section-4__global-link d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-4__cont-pro px-4 d-flex flex-column align-items-center justify-content-center">
-        <div class="cp-section-4__cont-img">
-            <img src="/img/pro-1.png" alt="" class="cp-section-4__cont-img__img-pro" />
-        </div>
-        <span class="cp-section-4__name heading-3">Andrés Ordóñez</span>
-        <span class="cp-section-4__carrer parrafos">Chief Creative Officer</span>
-        <span class="cp-section-4__company parrafos">FCB Chicago</span>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#andres-ordonez" class="cp-section-4__link-bio">biografía</a>
-        </div>
-    </a>
-</div>
-*/
 
 const info_speakers = [
     {
@@ -67,7 +52,7 @@ const info_speakers = [
 
 info_speakers.forEach(element => {
     grid_speakers.innerHTML += `
-        <div class="cp-speakers-grid__item">
+        <div class="cp-speakers-grid__item mb-4">
             <a href="#" data-bs-toggle="modal" data-bs-target="#speaker-${element.id}" class="cp-section-4__global-link d-flex flex-column align-items-center justify-content-center">
                 <div class="cp-section-4__cont-pro px-4 d-flex flex-column align-items-center justify-content-center">
                 <div class="cp-section-4__cont-img">
@@ -82,3 +67,33 @@ info_speakers.forEach(element => {
         </div>
     `
 });
+
+const grid_speakers_2 = document.getElementById('cp-speakers-2')
+
+const info_speakers_2 = [
+    {
+        'id': 7,
+        'nombre': 'Alberto Triana Wannoni',
+        'foto': 'img/entrevistados2/alberto-triana.png',
+        'cargo': 'Director Creativo',
+        'empresa': 'VMLY&R Commerce',
+        'ciudad': 'New York, USA'
+    },
+]
+
+
+info_speakers_2.forEach(item => {
+    grid_speakers_2.innerHTML += `
+    <div class="col-lg-3">
+        <div class="cp-card-2 px-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="cp-section-6__cont-img">
+            <img src="${item.foto}" alt="" class="cp-section-6__cont-img__img-pro" />
+            </div>
+            <span class="cp-section-6__name heading-3">${item.nombre}</span>
+            <span class="cp-section-6__carrer parrafos">${item.cargo}</span>
+            <span class="cp-section-6__country parrafos">${item.empresa}</span>
+            <span class="cp-section-6__country parrafos">${item.ciudad}</span>
+        </div>
+    </div>
+    `
+})
