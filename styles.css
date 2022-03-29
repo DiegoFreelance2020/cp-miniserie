@@ -731,7 +731,8 @@
     }
     .cp-section-7 .cp-section-7__lines{
         width: 50px;
-        top: -140px;
+        top: -40px;
+        left: -20px;
     }
     .cp-section-7__lines-down{
         width: 300px;
