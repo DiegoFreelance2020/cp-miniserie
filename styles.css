@@ -34,7 +34,7 @@
 
 
 .cp-intro{
-    background-image: url(/img/cp-borders-bg.png);
+    background-image: url(img/cp-borders-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -650,7 +650,7 @@
 
 @media (max-width: 576px){
     .cp-intro{
-        background-image: url(/img/cp-borders-mb.png);
+        background-image: url(img/cp-borders-mb.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
