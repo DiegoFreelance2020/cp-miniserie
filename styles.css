@@ -583,6 +583,10 @@
     object-fit: cover;
 }
 
+.cp-card-2{
+    margin-bottom: 3em;
+}
+
 @media (min-width: 1920px){
     .cp-section-2 .cp-section-2__text-aux{
         padding: 2em 1em;
@@ -692,10 +696,11 @@
     }
     .cp-section-2 .cp-section-2__text-2{
         padding: 0;
-        height: 510px;
+        height: 450px;
     }
     .cp-section-2__text-aux{
         font-size: 17px;
+        line-height: 35px !important;
     }
     .cp-section-2__cont-img{
         padding: 0;
@@ -724,6 +729,13 @@
     .cp-section-6 .cp-card-2{
         text-align: center;
     }
+    .cp-section-7 .cp-section-7__lines{
+        width: 50px;
+        top: -140px;
+    }
+    .cp-section-7__lines-down{
+        width: 300px;
+    }
     .cp-section-7 .cp-section-7__title{
         font-size: 30px;
         text-align: center;
@@ -734,6 +746,7 @@
     }
     .cp-section-8 .cp-section-8__text{
         font-size: 17px;
+        padding: 2rem;
     }
     .cp-section-9 .cp-cont-text-9 .cp-section-9__text-left{
         font-size: 17px;
