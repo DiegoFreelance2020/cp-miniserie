@@ -93,9 +93,9 @@ const info_speakers_2 = [
         'id': 9,
         'nombre': 'Christian Mondragón',
         'foto': 'img/entrevistados2/pro-3.png',
-        'cargo': 'Copywriter',
-        'empresa': 'Dieste Inc',
-        'ciudad': 'Dallas, Texas, USA'
+        'cargo': 'Creative Director',
+        'empresa': 'Saatchi & Saatchi Associate',
+        'ciudad': 'LA, California, USA'
     },
 
     {
@@ -273,8 +273,8 @@ const info_speakers_2 = [
         'id': 29,
         'nombre': 'Juan Sebastian Moreno',
         'foto': 'img/entrevistados2/pro-23.png',
-        'cargo': 'Group Art Supervisor',
-        'empresa': 'AREA23',
+        'cargo': 'Creative Director',
+        'empresa': 'MullenLowe USA Associate',
         'ciudad': 'New York, USA'
     },
 
@@ -465,6 +465,51 @@ const info_speakers_2 = [
         'cargo': 'Strategic Planner',
         'empresa': 'DLC Ogilvy Puerto Rico',
         'ciudad': 'Puerto Rico- San Juan'
+    },
+
+    {
+        'id': 51,
+        'nombre': 'Alejandro Zárate',
+        'foto': 'img/entrevistados2/pro-45.png',
+        'cargo': 'Senior Copywriter ',
+        'empresa': 'Leo Burnett Chicago',
+        'ciudad': 'Chicago, Illinois, United States'
+    },
+
+    {
+        'id': 52,
+        'nombre': 'Alvaro Meléndez',
+        'foto': 'img/entrevistados2/pro-46.png',
+        'cargo': 'CEO y Co-Fundador',
+        'empresa': 'CRANT',
+        'ciudad': 'Miami, Florida, USA'
+    },
+
+    {
+        'id': 53,
+        'nombre': 'David Meneses',
+        'foto': 'img/entrevistados2/pro-47.png',
+        'cargo': 'Senior Copywriter',
+        'empresa': 'Hill Holliday',
+        'ciudad': 'CDMX, México'
+    },
+
+    {
+        'id': 54,
+        'nombre': 'David Orrego',
+        'foto': 'img/entrevistados2/pro-48.png',
+        'cargo': 'Research Manager',
+        'empresa': 'Meta US',
+        'ciudad': 'Boston - Estados Unidos'
+    },
+
+    {
+        'id': 55,
+        'nombre': 'Juliana Ardila',
+        'foto': 'img/entrevistados2/pro-49.png',
+        'cargo': 'Associate creative director',
+        'empresa': 'Saatchi & Saatchi NY',
+        'ciudad': 'New York, USA'
     }
    
 ]
