@@ -514,7 +514,13 @@ const info_speakers_2 = [
    
 ]
 
-info_speakers_2.forEach(item => {
+const sort_speakers_2 = info_speakers_2.sort(function(a, b){
+    if(a.nombre.toLowerCase() < b.nombre.toLowerCase()) return -1
+    if(a.nombre.toLowerCase() > b.nombre.toLowerCase()) return 1
+    return 0
+})
+
+sort_speakers_2.forEach(item => {
     grid_speakers_2.innerHTML += `
     <div class="col-lg-3">
         <div class="cp-card-2 px-4 d-flex flex-column align-items-center justify-content-center">
